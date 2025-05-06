@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 60px;
+  background-color: #eae6db;
+}
+
+.header {
+  background-color: #27577f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #1f4868;
+  gap: 60px;
+  margin-top: auto;
+}
+
+.header-nav-link {
+  padding: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #27577f;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  height: 50px;
+  margin-top: auto;
+}
+
+.section {
+  display: flex;
+  background-color: #f8f2e6;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  flex: 3; /* або 4 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container article {
+  width: 70%;
+  margin-bottom: 20px;
+}
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+}
+
+.sidebar-section {
+  background-color: #bed5dd;
+  padding: 20px;
+}
+
+.main-article {
+  padding: 0;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.secondary-article {
+  display: flex;
+  gap: 20px;
+  position: relative; /* додано для позиціонування псевдоелемента */
+}
+
+.secondary-article::before {
+  content: ""; /* створює порожній елемент */
+  position: absolute;
+  top: -10px; /* підняти лінію трохи вище */
+  left: 0;
+  width: 100%;
+  height: 2px; /* товщина лінії */
+  background-color: #27577f; /* колір лінії */
+  margin-bottom: 10px; /* відстань від лінії до контенту */
+}
+
+.secondary-article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+img {
+  border-radius: 16px;
+}
+
+.main-article img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-button {
+  background-color: #27577f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sidebar-button:hover {
+  background-color: #1f4868;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #27577f;
+  font-size: 18px;
+}
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-input-section {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar-search {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+}
