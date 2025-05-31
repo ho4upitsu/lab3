@@ -1,94 +1,103 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Lab 3</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-<header class="header">
-    <h1>NEWS WEBSITE</h1>
-    <nav>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>NEWS WEBSITE</h1>
+      <nav>
         <ul class="header-nav">
-            <li><a class="header-nav-link" href="index.html">Home</a></li>
-            <li><a class="header-nav-link" href="index.html">World</a></li>
-            <li><a class="header-nav-link" href="index.html">Politics</a></li>
-            <li><a class="header-nav-link" href="index.html">Business</a></li>
+          <li><a class="header-nav-link" href="index.html">Home</a></li>
+          <li><a class="header-nav-link" href="index.html">World</a></li>
+          <li><a class="header-nav-link" href="index.html">Politics</a></li>
+          <li><a class="header-nav-link" href="index.html">Business</a></li>
         </ul>
-    </nav>
-</header>
-<div class="content-wrapper">
-    <main class="main-container">
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <main class="main-container">
         <article class="main-article">
-            <img alt="News Image" src="https://picsum.photos/300/200">
-            <h2>Main story title</h2>
+          <img alt="News Image" src="https://picsum.photos/300/200" />
+          <h2>Main story title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </article>
+
+        <article class="secondary-article">
+          <img alt="World news image" src="https://picsum.photos/300/200" />
+          <div class="secondary-article-text">
+            <h2>World</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
         </article>
 
         <article class="secondary-article">
-            <img alt="World news image" src="https://picsum.photos/300/200">
-            <div class="secondary-article-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                <h2>World</h2>
-            </div>
+          <img alt="Politics news image" src="https://picsum.photos/300/200" />
+          <div class="secondary-article-text">
+            <h2>World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
         </article>
 
         <article class="secondary-article">
-            <img alt="Politics news image" src="https://picsum.photos/300/200">
-            <div class="secondary-article-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                <h2>World</h2>
-            </div>
+          <img alt="Business news image" src="https://picsum.photos/300/200" />
+          <div class="secondary-article-text">
+            <h2>World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
         </article>
-
-        <article class="secondary-article">
-            <img alt="Business news image" src="https://picsum.photos/300/200">
-            <div class="secondary-article-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                <h2>World</h2>
-            </div>
-        </article>
-
-    </main>
-    <aside class="sidebar">
+      </main>
+      <aside class="sidebar">
         <section class="sidebar-section">
-            <h2>Search</h2>
-            <div class="sidebar-input-section">
-                <form role="search">
-                    <input aria-label="Site search" autocomplete="off" class="sidebar-search" id="site-search"
-                           name="q" placeholder="Search..." type="search">
-                </form>
-                <button class="sidebar-button">Search</button>
-            </div>
+          <h2>Search</h2>
+          <div class="sidebar-input-section">
+            <form role="search">
+              <input
+                aria-label="Site search"
+                autocomplete="off"
+                class="sidebar-search"
+                id="site-search"
+                name="q"
+                placeholder="Search..."
+                type="search"
+              />
+            </form>
+            <button class="sidebar-button">Search</button>
+          </div>
         </section>
 
         <section class="sidebar-section">
-            <h2>Popular News</h2>
-            <ul class="sidebar-list">
-                <li><a class="sidebar-link" href="#">Popular News 1</a></li>
-                <li><a class="sidebar-link" href="#">Popular News 2</a></li>
-                <li><a class="sidebar-link" href="#">Popular News 3</a></li>
-            </ul>
+          <h2>Popular News</h2>
+          <ul class="sidebar-list">
+            <li><a class="sidebar-link" href="#">Popular News 1</a></li>
+            <li><a class="sidebar-link" href="#">Popular News 2</a></li>
+            <li><a class="sidebar-link" href="#">Popular News 3</a></li>
+          </ul>
         </section>
 
         <section class="sidebar-section">
-            <h2>More News</h2>
-            <ul class="sidebar-list">
-                <li><a class="sidebar-link" href="#">Popular News 1</a></li>
-                <li><a class="sidebar-link" href="#">Popular News 2</a></li>
-                <li><a class="sidebar-link" href="#">Popular News 3</a></li>
-            </ul>
+          <h2>More News</h2>
+          <ul class="sidebar-list">
+            <li><a class="sidebar-link" href="#">Popular News 1</a></li>
+            <li><a class="sidebar-link" href="#">Popular News 2</a></li>
+            <li><a class="sidebar-link" href="#">Popular News 3</a></li>
+          </ul>
         </section>
 
         <article class="sidebar-article">
-            <h2>Featured Story</h2>
-            <img alt="News Image" src="https://picsum.photos/300/200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <h2>Featured Story</h2>
+          <img alt="News Image" src="https://picsum.photos/300/200" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
         </article>
 
         <button class="sidebar-button">Address auvs</button>
-    </aside>
-</div>
-<footer class="footer">
-    <p>&copy; 2024 News Website</p>
-</footer>
-</body>
+      </aside>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2024 News Website</p>
+    </footer>
+  </body>
 </html>
